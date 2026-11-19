@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SA1 SUMMARY EXERCISE — Grade 4 English (Unit 3–5 Review)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="bg-sky-50/50 text-slate-800 min-h-screen antialiased selection:bg-indigo-200 selection:text-indigo-950">
+  <!-- Sticky Header & Live Auto Score -->
+  <header class="bg-white border-b border-sky-200/80 sticky top-0 z-30 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 sm:py-4">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 text-xs font-semibold tracking-wide">
+            <span class="bg-indigo-100 text-indigo-900 px-3 py-1 rounded-full">Wellington Intelligence School 2026/2027</span>
+            <span class="bg-sky-100 text-sky-900 px-3 py-1 rounded-full">Grade 4 English • 45 Questions • Auto Score</span>
+          </div>
+          <h1 class="text-lg sm:text-xl lg:text-2xl font-extrabold text-slate-900 mt-1.5">
+            SA1 SUMMARY EXERCISE — Topic: Unit 3–5 Review
+          </h1>
+        </div>
+
+        <!-- Live Score Cards -->
+        <div class="grid grid-cols-4 gap-2 bg-slate-50 border border-slate-200 rounded-2xl p-2 self-start lg:self-auto w-full lg:w-auto">
+          <div class="text-center px-2.5 py-1 bg-white rounded-xl border border-emerald-100">
+            <div class="text-[11px] font-semibold text-emerald-700">Benar</div>
+            <div id="header-correct" class="text-base sm:text-lg font-extrabold text-emerald-600">0</div>
+          </div>
+          <div class="text-center px-2.5 py-1 bg-white rounded-xl border border-rose-100">
+            <div class="text-[11px] font-semibold text-rose-700">Salah</div>
+            <div id="header-wrong" class="text-base sm:text-lg font-extrabold text-rose-600">0</div>
+          </div>
+          <div class="text-center px-2.5 py-1 bg-white rounded-xl border border-slate-100">
+            <div class="text-[11px] font-semibold text-slate-500">Sisa</div>
+            <div id="header-unanswered" class="text-base sm:text-lg font-extrabold text-slate-700">45</div>
+          </div>
+          <div class="text-center px-2.5 py-1 bg-indigo-50 rounded-xl border border-indigo-200">
+            <div class="text-[11px] font-bold text-indigo-900">Nilai (100)</div>
+            <div id="header-score-100" class="text-base sm:text-lg font-extrabold text-indigo-600">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="mt-3 flex items-center gap-3">
+        <div class="flex-1 bg-slate-200 h-2 rounded-full overflow-hidden">
+          <div id="progress-bar" class="bg-gradient-to-r from-sky-500 via-indigo-500 to-emerald-500 h-full transition-all duration-300" style="width: 0%;"></div>
+        </div>
+        <span id="progress-text" class="text-xs font-bold text-slate-600 shrink-0">0 / 45 Terjawab (0%)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+    <!-- Control & Student Info Bar -->
+    <section class="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-4 sm:p-5 mb-6 space-y-4">
+      <!-- Student Name & Date -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 pb-4 border-b border-slate-100 items-end">
+        <div class="lg:col-span-5">
+          <label for="student-name" class="block text-xs font-bold text-slate-600 uppercase tracking-wide mb-1">
+            Student Name (Nama Siswa)
+          </label>
+          <input
+            id="student-name"
+            type="text"
+            placeholder="Type your name..."
+            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-medium text-slate-900 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200 transition"
+          />
+        </div>
+        <div class="lg:col-span-3">
+          <label for="student-date" class="block text-xs font-bold text-slate-600 uppercase tracking-wide mb-1">
+            Date (Tanggal)
+          </label>
+          <input
+            id="student-date"
+            type="date"
+            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-medium text-slate-900 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200 transition"
+          />
+        </div>
+        <!-- Unit Quick Jump Pills -->
+        <div class="lg:col-span-4">
+          <div class="text-xs font-bold text-slate-600 uppercase tracking-wide mb-1.5">Lompat ke Bagian:</div>
+          <div class="flex flex-wrap gap-1.5">
+            <button data-jump="1" type="button" class="unit-jump-btn px-2.5 py-1.5 rounded-xl bg-sky-50 text-sky-800 border border-sky-200 text-xs font-bold hover:bg-sky-100 transition">
+              Unit 3 (1–15)
+            </button>
+            <button data-jump="16" type="button" class="unit-jump-btn px-2.5 py-1.5 rounded-xl bg-indigo-50 text-indigo-800 border border-indigo-200 text-xs font-bold hover:bg-indigo-100 transition">
+              Unit 4 (16–31)
+            </button>
+            <button data-jump="32" type="button" class="unit-jump-btn px-2.5 py-1.5 rounded-xl bg-amber-50 text-amber-800 border border-amber-200 text-xs font-bold hover:bg-amber-100 transition">
+              Unit 5 (32–40)
+            </button>
+            <button data-jump="41" type="button" class="unit-jump-btn px-2.5 py-1.5 rounded-xl bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-bold hover:bg-emerald-100 transition">
+              Reading (41–45)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mode Switcher & Actions -->
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-semibold text-slate-500 hidden sm:inline">Mode Tampilan:</span>
+          <div class="inline-flex bg-slate-100 p-1 rounded-xl w-full sm:w-auto">
+            <button
+              id="mode-single-btn"
+              type="button"
+              class="flex-1 sm:flex-initial px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-white text-slate-900 shadow-sm transition"
+            >
+              Satu per Satu
+            </button>
+            <button
+              id="mode-list-btn"
+              type="button"
+              class="flex-1 sm:flex-initial px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 transition"
+            >
+              Semua Soal (Daftar)
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2.5">
+          <button
+            id="btn-finish-top"
+            type="button"
+            class="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-indigo-600 text-white font-bold text-xs sm:text-sm hover:bg-indigo-700 active:scale-[0.99] transition shadow-sm"
+          >
+            Lihat Hasil Akhir
+          </button>
+          <button
+            id="btn-reset-top"
+            type="button"
+            class="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-rose-50 text-rose-700 border border-rose-200 font-semibold text-xs sm:text-sm hover:bg-rose-100 active:scale-[0.99] transition"
+          >
+            Ulangi Kuis
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Status Banner (Replaces alert) -->
+    <div id="status-banner" class="hidden mb-6 rounded-2xl p-4 border text-sm font-medium transition-all"></div>
+
+    <!-- Main 12-Column Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+      <!-- Left 8 Columns: Question Display -->
+      <div class="lg:col-span-8 space-y-6">
+        <!-- SINGLE QUESTION VIEW -->
+        <section id="single-view-container" class="space-y-5">
+          <!-- Passage Box (Visible automatically for Questions 41-45) -->
+          <div id="single-passage-card" class="hidden bg-gradient-to-br from-emerald-50 via-teal-50/70 to-sky-50 rounded-3xl border-2 border-emerald-200 shadow-sm p-5 sm:p-6">
+            <div class="flex items-center justify-between gap-2 pb-3 mb-3 border-b border-emerald-200/80">
+              <div class="flex items-center gap-2">
+                <span class="px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-bold">Reading Passage (Questions 41–45)</span>
+                <span class="text-xs font-semibold text-emerald-900 hidden sm:inline">Read the stories of Sam, Anita, and Kelly</span>
+              </div>
+              <button id="toggle-single-passage" type="button" class="text-xs font-bold text-emerald-800 hover:underline">
+                Sembunyikan Teks
+              </button>
+            </div>
+            <div id="single-passage-content" class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs sm:text-sm text-slate-800 leading-relaxed"></div>
+          </div>
+
+          <!-- Question Card -->
+          <div class="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-7">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-slate-100">
+              <div class="flex flex-wrap items-center gap-2">
+                <span id="single-badge" class="inline-flex items-center justify-center px-3.5 py-1.5 rounded-full bg-indigo-600 text-white text-sm font-bold shadow-sm">
+                  Soal 1 / 45
+                </span>
+                <span id="single-unit-pill" class="text-xs font-bold px-3 py-1 rounded-full bg-sky-100 text-sky-900">
+                  UNIT 3 REVIEW
+                </span>
+                <span id="single-section-pill" class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-700">
+                  Vocabulary
+                </span>
+              </div>
+              <span id="single-status-pill" class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-600">
+                Belum Dijawab
+              </span>
+            </div>
+
+            <!-- Word Bank Hint Pill (if applicable) -->
+            <div id="single-wordbank-box" class="hidden mb-4 px-3.5 py-2.5 rounded-2xl bg-amber-50/80 border border-amber-200 text-xs text-amber-950"></div>
+
+            <!-- Question Text -->
+            <h2 id="single-question-text" class="text-base sm:text-xl font-bold text-slate-900 leading-relaxed mb-6"></h2>
+
+            <!-- Multiple Choice Options (A-D) -->
+            <div id="single-options-container" class="space-y-3"></div>
+
+            <!-- Instant Feedback Box -->
+            <div id="single-feedback-box" class="hidden mt-6 rounded-2xl p-4 sm:p-5 border transition-all"></div>
+
+            <!-- Prev / Next Buttons -->
+            <div class="mt-7 pt-5 border-t border-slate-100 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+              <button
+                id="btn-prev"
+                type="button"
+                class="px-5 py-3 rounded-xl border border-slate-300 bg-white text-slate-700 font-semibold text-sm hover:bg-slate-50 active:scale-[0.99] transition disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                ← Soal Sebelumnya
+              </button>
+              <button
+                id="btn-next"
+                type="button"
+                class="px-5 py-3 rounded-xl bg-slate-900 text-white font-semibold text-sm hover:bg-slate-800 active:scale-[0.99] transition shadow-sm disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                Soal Berikutnya →
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- LIST VIEW (ALL 45 QUESTIONS) -->
+        <section id="list-view-container" class="hidden space-y-5">
+          <!-- Rendered dynamically -->
+        </section>
+
+        <!-- Bottom Action Bar in List Mode -->
+        <div id="list-bottom-bar" class="hidden bg-white rounded-3xl border border-slate-200 shadow-sm p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <h3 class="font-bold text-slate-900 text-base">Selesai Mengerjakan Seluruh 45 Soal?</h3>
+            <p class="text-xs sm:text-sm text-slate-500 mt-0.5">
+              Klik tombol di samping untuk membuka Ringkasan Nilai Akhir &amp; Rincian Skor per Unit.
+            </p>
+          </div>
+          <button
+            id="btn-finish-bottom"
+            type="button"
+            class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-indigo-600 text-white font-bold text-sm hover:bg-indigo-700 active:scale-[0.99] transition shadow-md shrink-0"
+          >
+            Lihat Hasil Akhir
+          </button>
+        </div>
+      </div>
+
+      <!-- Right 4 Columns: Number Navigation Map (1-45) -->
+      <aside class="lg:col-span-4 bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 lg:sticky lg:top-28">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-slate-900 text-base">Navigasi Nomor (1–45)</h3>
+          <span id="nav-progress-label" class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-full">
+            0/45
+          </span>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="grid grid-cols-2 gap-1.5 bg-slate-100 p-1.5 rounded-xl mb-4 text-xs font-semibold">
+          <button data-filter="all" type="button" class="filter-btn py-2 px-2.5 rounded-lg bg-white text-slate-900 shadow-sm transition">
+            Semua (45)
+          </button>
+          <button data-filter="unanswered" type="button" class="filter-btn py-2 px-2.5 rounded-lg text-slate-600 hover:text-slate-900 transition">
+            Belum Dijawab
+          </button>
+          <button data-filter="correct" type="button" class="filter-btn py-2 px-2.5 rounded-lg text-slate-600 hover:text-slate-900 transition">
+            Benar
+          </button>
+          <button data-filter="wrong" type="button" class="filter-btn py-2 px-2.5 rounded-lg text-slate-600 hover:text-slate-900 transition">
+            Salah
+          </button>
+        </div>
+
+        <!-- Legend -->
+        <div class="flex flex-wrap items-center gap-3 text-[11px] font-medium text-slate-600 mb-3">
+          <span class="flex items-center gap-1.5">
+            <span class="w-3 h-3 rounded bg-emerald-500 inline-block"></span> Benar
+          </span>
+          <span class="flex items-center gap-1.5">
+            <span class="w-3 h-3 rounded bg-rose-500 inline-block"></span> Salah
+          </span>
+          <span class="flex items-center gap-1.5">
+            <span class="w-3 h-3 rounded bg-slate-200 inline-block"></span> Belum
+          </span>
+        </div>
+
+        <!-- 1-45 Number Grid -->
+        <div id="number-grid" class="grid grid-cols-5 sm:grid-cols-9 lg:grid-cols-5 gap-2 max-h-80 overflow-y-auto pr-1"></div>
+
+        <!-- Finish Button -->
+        <div class="mt-4 pt-4 border-t border-slate-100">
+          <button
+            id="btn-finish-side"
+            type="button"
+            class="w-full py-3 px-4 rounded-xl bg-indigo-600 text-white font-bold text-sm hover:bg-indigo-700 active:scale-[0.99] transition shadow-sm"
+          >
+            Lihat Hasil Akhir
+          </button>
+        </div>
+      </aside>
+    </div>
+
+    <!-- FINAL SUMMARY CARD -->
+    <section id="summary-section" class="hidden mt-8 bg-white rounded-3xl border-2 border-indigo-200 shadow-xl p-6 sm:p-8">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-6 border-b border-slate-100">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-indigo-100 text-indigo-800">
+            Laporan Hasil Kuis SA1
+          </span>
+          <h2 class="text-2xl font-extrabold text-slate-900 mt-2">Ringkasan Nilai &amp; Evaluasi Unit 3–5</h2>
+          <p id="summary-student-meta" class="text-sm text-slate-600 mt-1"></p>
+        </div>
+
+        <div class="flex flex-wrap gap-2.5">
+          <button
+            id="btn-close-summary"
+            type="button"
+            class="px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-semibold text-sm hover:bg-slate-50 transition"
+          >
+            Tutup Ringkasan
+          </button>
+          <button
+            id="btn-reset-summary"
+            type="button"
+            class="px-5 py-2.5 rounded-xl bg-indigo-600 text-white font-bold text-sm hover:bg-indigo-700 transition shadow-sm"
+          >
+            Ulangi Kuis
+          </button>
+        </div>
+      </div>
+
+      <!-- Overall Stats Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div class="bg-indigo-50/80 rounded-2xl p-5 border border-indigo-200">
+          <div class="text-xs font-bold text-indigo-900 uppercase">Nilai Akhir (Skala 100)</div>
+          <div id="final-score-100" class="text-4xl font-extrabold text-indigo-600 mt-1">0</div>
+          <div id="final-raw-score" class="text-xs font-semibold text-indigo-800 mt-1">Skor: 0 / 45 (0%)</div>
+        </div>
+
+        <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+          <div class="text-xs font-bold text-slate-500 uppercase">Predikat</div>
+          <div id="final-predicate-badge" class="inline-block mt-2 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold bg-slate-200 text-slate-800">
+            -
+          </div>
+          <p id="final-predicate-desc" class="text-xs text-slate-600 mt-2 leading-relaxed"></p>
+        </div>
+
+        <div class="bg-emerald-50/70 rounded-2xl p-5 border border-emerald-200">
+          <div class="text-xs font-bold text-emerald-800 uppercase">Jawaban Benar</div>
+          <div id="final-correct" class="text-3xl font-extrabold text-emerald-600 mt-1">0</div>
+          <div class="text-xs font-medium text-emerald-700 mt-1">Dari 45 soal</div>
+        </div>
+
+        <div class="bg-rose-50/70 rounded-2xl p-5 border border-rose-200">
+          <div class="text-xs font-bold text-rose-800 uppercase">Jawaban Salah / Kosong</div>
+          <div id="final-wrong-total" class="text-3xl font-extrabold text-rose-600 mt-1">0</div>
+          <div id="final-wrong-detail" class="text-xs font-medium text-rose-700 mt-1">0 salah, 45 belum dijawab</div>
+        </div>
+      </div>
+
+      <!-- Breakdown per Unit -->
+      <div class="mb-6">
+        <h3 class="font-bold text-slate-900 text-sm uppercase tracking-wide mb-3">Rincian Skor per Bagian (Unit Breakdown)</h3>
+        <div id="unit-breakdown-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"></div>
+      </div>
+
+      <!-- Review Wrong / All Answers -->
+      <div>
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <h3 class="font-bold text-slate-900 text-base">Tinjauan Jawaban</h3>
+          <div class="flex flex-wrap gap-2 text-xs font-semibold">
+            <button
+              id="review-only-wrong-btn"
+              type="button"
+              class="px-3.5 py-2 rounded-xl bg-rose-600 text-white shadow-sm transition"
+            >
+              Tinjau Jawaban Salah
+            </button>
+            <button
+              id="review-all-btn"
+              type="button"
+              class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition"
+            >
+              Tampilkan Semua (45)
+            </button>
+          </div>
+        </div>
+
+        <div id="review-list" class="space-y-3 max-h-[28rem] overflow-y-auto pr-1"></div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    /**
+     * Reading Passage Data for Questions 41-45
+     */
+    const readingPassages = [
+      {
+        character: "Sam",
+        badgeColor: "bg-sky-600",
+        cardBorder: "border-sky-200",
+        text: "“I used to play computer games for three hours a day. My eyes used to hurt a lot. Now, I only play computer games an hour a day, and then I play outside with my friends. I feel better and healthier.”"
+      },
+      {
+        character: "Anita",
+        badgeColor: "bg-indigo-600",
+        cardBorder: "border-indigo-200",
+        text: "“In my family, we used to look at our phones all the time. We didn't use to talk to each other, and we didn't use to spend time with each other. Now we put our phones away all evening. We play games and talk about our day. It feels good to talk to my family more often.”"
+      },
+      {
+        character: "Kelly",
+        badgeColor: "bg-teal-600",
+        cardBorder: "border-teal-200",
+        text: "“My brother and I used to waste a lot of time surfing the Internet. We didn't use to go outside. We used to be tired all the time, too. One day, we decided to time ourselves and only play on the computer for an hour. We had so much more time to do other things, like visit friends and listen to music!”"
+      }
+    ];
+
+    /**
+     * Complete 45 Questions for SA1 SUMMARY EXERCISE — Topic: Unit 3-5 Review
+     */
+    const quizData = [
+      // ================= UNIT 3 REVIEW (1–15) =================
+      {
+        id: 1,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: technology • app • mobile device • animation",
+        question: "I use my ________ to communicate with my friends and search for information.",
+        correctAnswer: "mobile device",
+        options: ["mobile device", "technology", "app", "animation"],
+        explanation: "Perangkat portabel seperti ponsel atau tablet yang digunakan untuk berkomunikasi dan mencari informasi disebut 'mobile device'."
+      },
+      {
+        id: 2,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: technology • app • mobile device • animation",
+        question: "Modern ________ makes our daily lives easier and more convenient.",
+        correctAnswer: "technology",
+        options: ["technology", "animation", "app", "mobile device"],
+        explanation: "'Modern technology' (teknologi modern) membuat kehidupan sehari-hari menjadi lebih mudah dan praktis."
+      },
+      {
+        id: 3,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: technology • app • mobile device • animation",
+        question: "The movie uses colorful ________ to make the characters look more interesting.",
+        correctAnswer: "animation",
+        options: ["animation", "app", "technology", "mobile device"],
+        explanation: "Film menggunakan 'animation' (animasi) penuh warna agar karakter terlihat lebih menarik."
+      },
+      {
+        id: 4,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: technology • app • mobile device • animation",
+        question: "I downloaded a new ________ to help me learn English.",
+        correctAnswer: "app",
+        options: ["app", "animation", "technology", "mobile device"],
+        explanation: "Program perangkat lunak yang diunduh ke ponsel untuk belajar bahasa Inggris disebut 'app' (aplikasi)."
+      },
+      {
+        id: 5,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with present perfect",
+        question: "________ you ever ________ (see) a snow?",
+        correctAnswer: "Have / seen",
+        options: ["Have / seen", "Has / seen", "Have / saw", "Did / see"],
+        explanation: "Subjek 'you' menggunakan 'Have', dan bentuk Verb 3 (past participle) dari 'see' adalah 'seen'."
+      },
+      {
+        id: 6,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with present perfect",
+        question: "________ we ever ________ (win) the tournament?",
+        correctAnswer: "Have / won",
+        options: ["Have / won", "Has / won", "Have / win", "Did / won"],
+        explanation: "Subjek 'we' menggunakan 'Have', dan bentuk Verb 3 dari 'win' adalah 'won'."
+      },
+      {
+        id: 7,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with present perfect",
+        question: "________ she ever ________ (cook) a food by herself? Yes, she ________.",
+        correctAnswer: "Has / cooked / has",
+        options: ["Has / cooked / has", "Have / cooked / have", "Has / cook / has", "Has / cooked / hasn't"],
+        explanation: "Subjek orang ketiga tunggal 'she' menggunakan 'Has', Verb 3 dari 'cook' adalah 'cooked', dan jawaban singkat positifnya 'Yes, she has'."
+      },
+      {
+        id: 8,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with present perfect",
+        question: "________ he ever ________ (make) an animation? No, he ________.",
+        correctAnswer: "Has / made / hasn't",
+        options: ["Has / made / hasn't", "Have / made / haven't", "Has / make / hasn't", "Has / made / has"],
+        explanation: "Subjek 'he' menggunakan 'Has', Verb 3 dari 'make' adalah 'made', dan jawaban singkat negatifnya 'No, he hasn't'."
+      },
+      {
+        id: 9,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with present perfect",
+        question: "________ I ever ________ (visit) this place before? It feels familiar.",
+        correctAnswer: "Have / visited",
+        options: ["Have / visited", "Has / visited", "Have / visit", "Did / visited"],
+        explanation: "Kata ganti 'I' selalu berpasangan dengan 'Have' dalam Present Perfect, diikuti Verb 3 'visited'."
+      },
+      {
+        id: 10,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with present perfect",
+        question: "________ the cat ever ________ (leave) the owner's side?",
+        correctAnswer: "Has / left",
+        options: ["Has / left", "Have / left", "Has / leave", "Has / leaved"],
+        explanation: "'The cat' adalah subjek tunggal (it) sehingga memakai 'Has', dan Verb 3 dari 'leave' adalah 'left'."
+      },
+      {
+        id: 11,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with \"used to\" / \"didn't use to\"",
+        question: "Zia ________ play with her toys in the living room every afternoon.",
+        correctAnswer: "used to",
+        options: ["used to", "didn't use to", "use to", "didn't used to"],
+        explanation: "Kalimat positif kebiasaan masa lampau menggunakan 'used to' + Verb 1 ('play')."
+      },
+      {
+        id: 12,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with \"used to\" / \"didn't use to\"",
+        question: "Keizo ________ have a smartphone, so he used his parents' phone.",
+        correctAnswer: "didn't use to",
+        options: ["didn't use to", "used to", "didn't used to", "doesn't use to"],
+        explanation: "Konteks 'so he used his parents' phone' menunjukkan dahulu ia tidak punya ponsel sendiri, sehingga bentuk negatifnya adalah 'didn't use to'."
+      },
+      {
+        id: 13,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with \"used to\" / \"didn't use to\"",
+        question: "We ________ watch cartoons together on Saturday mornings.",
+        correctAnswer: "used to",
+        options: ["used to", "didn't use to", "use to", "are used to"],
+        explanation: "Kebiasaan bersama di masa lalu dinyatakan dengan bentuk positif 'used to'."
+      },
+      {
+        id: 14,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with \"used to\" / \"didn't use to\"",
+        question: "They ________ eat spicy food, but now they enjoy spicy noodles.",
+        correctAnswer: "didn't use to",
+        options: ["didn't use to", "used to", "didn't used to", "don't use to"],
+        explanation: "Kata 'but now they enjoy...' menunjukkan kontras bahwa dahulu mereka tidak makan makanan pedas ('didn't use to')."
+      },
+      {
+        id: 15,
+        unit: "UNIT 3 REVIEW",
+        unitKey: "unit3",
+        section: "Complete with \"used to\" / \"didn't use to\"",
+        question: "________ you ________ play outside with your friend when you were younger?",
+        correctAnswer: "Did / use to",
+        options: ["Did / use to", "Did / used to", "Do / use to", "Have / used to"],
+        explanation: "Dalam kalimat tanya past tense yang sudah memakai 'Did', kata kerja kembali ke bentuk dasar 'use to' (tanpa -d)."
+      },
+
+      // ================= UNIT 4 REVIEW (16–31) =================
+      {
+        id: 16,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: imagination • rehearse • comforting • distracted",
+        question: "Children are amazing. They really have strong ________ to make their life colorful.",
+        correctAnswer: "imagination",
+        options: ["imagination", "rehearse", "comforting", "distracted"],
+        explanation: "Anak-anak memiliki daya khayal atau 'imagination' yang kuat untuk membuat hidup mereka penuh warna."
+      },
+      {
+        id: 17,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: imagination • rehearse • comforting • distracted",
+        question: "We only have a few more days to ________ our dancing performance before the show next week.",
+        correctAnswer: "rehearse",
+        options: ["rehearse", "imagination", "comforting", "distracted"],
+        explanation: "Berlatih pertunjukan tari sebelum pementasan disebut 'rehearse'."
+      },
+      {
+        id: 18,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: imagination • rehearse • comforting • distracted",
+        question: "Jacques' level of concentration is excellent. He can maintain his focus even during noisy situation. He is not easily ________.",
+        correctAnswer: "distracted",
+        options: ["distracted", "comforting", "rehearse", "imagination"],
+        explanation: "Karena konsentrasinya sangat baik meski dalam situasi bising, ia tidak mudah teralihkan perhatiannya ('distracted')."
+      },
+      {
+        id: 19,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: imagination • rehearse • comforting • distracted",
+        question: "Mom is ________ my little brother to calm his tantrum down.",
+        correctAnswer: "comforting",
+        options: ["comforting", "distracted", "rehearse", "imagination"],
+        explanation: "Menenangkan adik yang sedang tantrum disebut 'comforting' (menghibur/menenangkan)."
+      },
+      {
+        id: 20,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Complete with \"also\", \"either\" or \"too\"",
+        question: "We are ________ going to Switzerland for our holiday next month.",
+        correctAnswer: "also",
+        options: ["also", "too", "either", "neither"],
+        explanation: "'also' diletakkan di tengah kalimat positif setelah 'to be' ('are') dan sebelum kata kerja ('going')."
+      },
+      {
+        id: 21,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Complete with \"also\", \"either\" or \"too\"",
+        question: "Albert doesn't like chicken, and he doesn't like beef ________.",
+        correctAnswer: "either",
+        options: ["either", "too", "also", "so"],
+        explanation: "Untuk menyatakan 'juga tidak' di akhir kalimat negatif ('doesn't like'), gunakan 'either'."
+      },
+      {
+        id: 22,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Complete with \"also\", \"either\" or \"too\"",
+        question: "We are all tired, hungry and thirsty ________.",
+        correctAnswer: "too",
+        options: ["too", "also", "either", "neither"],
+        explanation: "'too' digunakan di akhir kalimat positif untuk menyatakan makna 'juga'."
+      },
+      {
+        id: 23,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Complete with \"also\", \"either\" or \"too\"",
+        question: "Hoshino forgot to bring her folders. She didn't remember to bring her books ________.",
+        correctAnswer: "either",
+        options: ["either", "too", "also", "as well"],
+        explanation: "Karena klausa kedua berbentuk negatif ('didn't remember'), kata 'juga' di akhir kalimat menggunakan 'either'."
+      },
+      {
+        id: 24,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Present perfect with \"just\", \"yet\" or \"already\"",
+        question: "________ you ________ (buy) mom's birthday gift? Her birthday is on next Friday.",
+        correctAnswer: "Have / already bought",
+        options: ["Have / already bought", "Have / yet bought", "Has / already bought", "Have / bought just"],
+        explanation: "Dalam kalimat tanya Present Perfect sebelum kata kerja utama ('bought'), digunakan 'already' untuk menanyakan apakah tindakan sudah dilakukan lebih awal."
+      },
+      {
+        id: 25,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Present perfect with \"just\", \"yet\" or \"already\"",
+        question: "We ________ (not receive) our uniform ________, and school is just days away.",
+        correctAnswer: "haven't received / yet",
+        options: ["haven't received / yet", "haven't received / already", "hasn't received / yet", "haven't receive / just"],
+        explanation: "Kalimat negatif Present Perfect ('haven't received') berpasangan dengan 'yet' (belum) di akhir klausa."
+      },
+      {
+        id: 26,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Present perfect with \"just\", \"yet\" or \"already\"",
+        question: "Niki ________ (clean) her room - she finished 4 hours ago.",
+        correctAnswer: "has already cleaned",
+        options: ["has already cleaned", "has just cleaned", "has cleaned yet", "have already cleaned"],
+        explanation: "Petunjuk 'she finished 4 hours ago' menunjukkan pekerjaan itu sudah selesai beberapa jam lalu (bukan baru saja), sehingga tepat menggunakan 'has already cleaned'."
+      },
+      {
+        id: 27,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Present perfect with \"just\", \"yet\" or \"already\"",
+        question: "I ________ (finish) playing soccer a few minutes ago and now I am tired.",
+        correctAnswer: "have just finished",
+        options: ["have just finished", "have already finished", "have finished yet", "has just finished"],
+        explanation: "Petunjuk 'a few minutes ago' (baru beberapa menit lalu) menunjukkan kejadian yang baru saja selesai, sehingga menggunakan 'have just finished'."
+      },
+      {
+        id: 28,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Complete by using \"ever\" or \"never\"",
+        question: "Rupert has ________ seen a ghost, so he doesn't believe in it.",
+        correctAnswer: "never",
+        options: ["never", "ever", "yet", "already"],
+        explanation: "Rupert tidak percaya hantu karena ia tidak pernah ('never') melihatnya."
+      },
+      {
+        id: 29,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Complete by using \"ever\" or \"never\"",
+        question: "I have ________ seen that comedy show for many times and it's no longer funny.",
+        correctAnswer: "ever",
+        options: ["ever", "never", "yet", "ago"],
+        explanation: "Sesuai pilihan 'ever' atau 'never' pada instruksi soal, 'ever' digunakan untuk penekanan pengalaman yang pernah dialami berkali-kali."
+      },
+      {
+        id: 30,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Complete by using \"ever\" or \"never\"",
+        question: "Has mom ________ slept in her office during a busy day?",
+        correctAnswer: "ever",
+        options: ["ever", "never", "yet", "since"],
+        explanation: "Dalam kalimat tanya pengalaman ('Has mom ...?'), gunakan 'ever' (pernahkah)."
+      },
+      {
+        id: 31,
+        unit: "UNIT 4 REVIEW",
+        unitKey: "unit4",
+        section: "Complete by using \"ever\" or \"never\"",
+        question: "For so long in my life, I have ________ tasted this kind of delicious cheesecake before.",
+        correctAnswer: "never",
+        options: ["never", "ever", "just", "yet"],
+        explanation: "Ungkapan 'For so long in my life ... before' bermakna 'belum pernah' mencicipi kue keju selezat ini sebelumnya ('never')."
+      },
+
+      // ================= UNIT 5 REVIEW (32–40) =================
+      {
+        id: 32,
+        unit: "UNIT 5 REVIEW",
+        unitKey: "unit5",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: historical sites • century • documents • flavors • explorer",
+        question: "There are many new ice cream ________ from my favorite brand and I can't wait to try them all!",
+        correctAnswer: "flavors",
+        options: ["flavors", "documents", "century", "explorer"],
+        explanation: "Varian rasa es krim dalam bahasa Inggris disebut 'flavors'."
+      },
+      {
+        id: 33,
+        unit: "UNIT 5 REVIEW",
+        unitKey: "unit5",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: historical sites • century • documents • flavors • explorer",
+        question: "The printer overheated because there were so many ________ to be printed out.",
+        correctAnswer: "documents",
+        options: ["documents", "flavors", "historical sites", "century"],
+        explanation: "Berkas atau file yang dicetak melalui printer disebut 'documents'."
+      },
+      {
+        id: 34,
+        unit: "UNIT 5 REVIEW",
+        unitKey: "unit5",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: historical sites • century • documents • flavors • explorer",
+        question: "The Great Pyramids and Sphynx are famous ________ located in Egypt.",
+        correctAnswer: "historical sites",
+        options: ["historical sites", "documents", "century", "explorer"],
+        explanation: "Piramida Agung dan Sphinx di Mesir adalah tempat bersejarah terkenal ('historical sites')."
+      },
+      {
+        id: 35,
+        unit: "UNIT 5 REVIEW",
+        unitKey: "unit5",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: historical sites • century • documents • flavors • explorer",
+        question: "Both World War I and II happened during the 20th ________.",
+        correctAnswer: "century",
+        options: ["century", "explorer", "historical sites", "documents"],
+        explanation: "Perang Dunia I dan II terjadi pada abad ke-20 ('20th century')."
+      },
+      {
+        id: 36,
+        unit: "UNIT 5 REVIEW",
+        unitKey: "unit5",
+        section: "Choose the correct vocabulary",
+        wordBank: "Word bank: historical sites • century • documents • flavors • explorer",
+        question: "My dad is an ________. He has travelled to several rainforests around the world.",
+        correctAnswer: "explorer",
+        options: ["explorer", "century", "flavors", "documents"],
+        explanation: "Orang yang menjelajahi berbagai hutan hujan di dunia disebut 'explorer' (penjelajah), juga cocok dengan artikel 'an'."
+      },
+      {
+        id: 37,
+        unit: "UNIT 5 REVIEW",
+        unitKey: "unit5",
+        section: "Present perfect with \"for\" or \"since\"",
+        question: "How long ________ she ________ (eat) in that restaurant? ________ 40 minutes.",
+        correctAnswer: "has / eaten / For",
+        options: ["has / eaten / For", "have / eaten / Since", "has / ate / For", "has / eaten / Since"],
+        explanation: "Subjek 'she' menggunakan 'has' + Verb 3 'eaten'. Karena '40 minutes' adalah durasi waktu, gunakan 'For'."
+      },
+      {
+        id: 38,
+        unit: "UNIT 5 REVIEW",
+        unitKey: "unit5",
+        section: "Present perfect with \"for\" or \"since\"",
+        question: "It ________ (rain) constantly ________ yesterday.",
+        correctAnswer: "has rained / since",
+        options: ["has rained / since", "has rained / for", "have rained / since", "rained / since"],
+        explanation: "Subjek 'It' menggunakan 'has rained', dan 'yesterday' adalah titik awal waktu sehingga memakai 'since'."
+      },
+      {
+        id: 39,
+        unit: "UNIT 5 REVIEW",
+        unitKey: "unit5",
+        section: "Present perfect with \"for\" or \"since\"",
+        question: "How long ________ you ________ (work) as a pilot? ________ 5 years.",
+        correctAnswer: "have / worked / For",
+        options: ["have / worked / For", "has / worked / For", "have / worked / Since", "have / work / For"],
+        explanation: "Subjek 'you' menggunakan 'have' + Verb 3 'worked'. Karena '5 years' adalah lama durasi, gunakan 'For'."
+      },
+      {
+        id: 40,
+        unit: "UNIT 5 REVIEW",
+        unitKey: "unit5",
+        section: "Present perfect with \"for\" or \"since\"",
+        question: "Mr. Rupert ________ (become) a baker ________ 2003.",
+        correctAnswer: "has become / since",
+        options: ["has become / since", "has became / since", "has become / for", "have become / since"],
+        explanation: "Verb 3 dari 'become' adalah 'become' (become - became - become), dan '2003' adalah tahun mulai sehingga memakai 'since'."
+      },
+
+      // ================= READING COMPREHENSION (41–45) =================
+      {
+        id: 41,
+        unit: "READING COMPREHENSION",
+        unitKey: "reading",
+        section: "Read the passage and answer",
+        question: "What were the characters' bad habits in the story?",
+        correctAnswer: "Sam played computer games for three hours a day, Anita looked at her phone all the time, and Kelly wasted a lot of time surfing the Internet.",
+        options: [
+          "Sam played computer games for three hours a day, Anita looked at her phone all the time, and Kelly wasted a lot of time surfing the Internet.",
+          "Sam watched TV all night, Anita played outside too much, and Kelly listened to music all day.",
+          "Sam didn't talk to his family, Anita played computer games for three hours, and Kelly didn't visit her friends.",
+          "All three characters used to play outside for three hours a day without doing their homework."
+        ],
+        explanation: "Berdasarkan teks: Sam bermain game komputer 3 jam sehari, keluarga Anita terus-menerus melihat ponsel, dan Kelly membuang banyak waktu berselancar di Internet."
+      },
+      {
+        id: 42,
+        unit: "READING COMPREHENSION",
+        unitKey: "reading",
+        section: "Read the passage and answer",
+        question: "What was the side effect felt by Anita for her bad habit?",
+        correctAnswer: "She didn't talk to or spend time with her family.",
+        options: [
+          "She didn't talk to or spend time with her family.",
+          "Her eyes used to hurt a lot every day.",
+          "She felt tired all the time and couldn't sleep.",
+          "She didn't have time to listen to music."
+        ],
+        explanation: "Anita menceritakan: 'We didn't use to talk to each other, and we didn't use to spend time with each other.'"
+      },
+      {
+        id: 43,
+        unit: "READING COMPREHENSION",
+        unitKey: "reading",
+        section: "Read the passage and answer",
+        question: "What was the side effect felt by Kelly for her bad habit?",
+        correctAnswer: "She felt tired all the time (and didn't go outside).",
+        options: [
+          "She felt tired all the time (and didn't go outside).",
+          "Her eyes hurt a lot from playing games.",
+          "She argued with her parents every evening.",
+          "She forgot to visit her family in Switzerland."
+        ],
+        explanation: "Kelly berkata: 'We didn't use to go outside. We used to be tired all the time, too.'"
+      },
+      {
+        id: 44,
+        unit: "READING COMPREHENSION",
+        unitKey: "reading",
+        section: "Read the passage and answer",
+        question: "What was the positive impact felt by Sam after he stopped his bad habit?",
+        correctAnswer: "He could play outside with his friends and felt better and healthier.",
+        options: [
+          "He could play outside with his friends and felt better and healthier.",
+          "He had more time to surf the Internet and listen to music.",
+          "He bought a new smartphone to play games all evening.",
+          "He started talking to Anita's family every evening."
+        ],
+        explanation: "Sam menuliskan: 'Now, I only play computer games an hour a day, and then I play outside with my friends. I feel better and healthier.'"
+      },
+      {
+        id: 45,
+        unit: "READING COMPREHENSION",
+        unitKey: "reading",
+        section: "Read the passage and answer",
+        question: "How did Sam solve his bad habit?",
+        correctAnswer: "He limited his computer game time to only one hour a day and played outside with his friends.",
+        options: [
+          "He limited his computer game time to only one hour a day and played outside with his friends.",
+          "He threw away his computer and never played games again.",
+          "He asked his parents to hide his phone every morning.",
+          "He only played computer games for three hours on weekends."
+        ],
+        explanation: "Sam mengatasi kebiasaan buruknya dengan membatasi waktu bermain game komputer menjadi hanya satu jam sehari lalu bermain di luar bersama teman-temannya."
+      }
+    ];
+
+    // App State
+    let questions = [];
+    let userAnswers = [];
+    let currentIndex = 0;
+    let viewMode = "single"; // 'single' | 'list'
+    let navFilter = "all"; // 'all' | 'unanswered' | 'correct' | 'wrong'
+    let reviewFilter = "wrong"; // 'wrong' | 'all'
+    let showSinglePassage = true;
+
+    /**
+     * Fisher-Yates Shuffle
+     */
+    function shuffleArray(array) {
+      const copy = [...array];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    /**
+     * Initialize or restart quiz with randomized options
+     */
+    function initQuizData() {
+      questions = quizData.map((q) => {
+        const shuffledOptions = shuffleArray(q.options);
+        const correctIdx = shuffledOptions.indexOf(q.correctAnswer);
+        return {
+          ...q,
+          shuffledOptions,
+          correctIdx
+        };
+      });
+      userAnswers = new Array(questions.length).fill(null);
+      currentIndex = 0;
+    }
+
+    /**
+     * Calculate live score stats and per-unit breakdown
+     */
+    function calculateStats() {
+      let correct = 0;
+      let wrong = 0;
+      let unanswered = 0;
+
+      const units = {
+        unit3: { label: "Unit 3 Review (1–15)", correct: 0, total: 0, badge: "bg-sky-100 text-sky-900" },
+        unit4: { label: "Unit 4 Review (16–31)", correct: 0, total: 0, badge: "bg-indigo-100 text-indigo-900" },
+        unit5: { label: "Unit 5 Review (32–40)", correct: 0, total: 0, badge: "bg-amber-100 text-amber-900" },
+        reading: { label: "Reading Passage (41–45)", correct: 0, total: 0, badge: "bg-emerald-100 text-emerald-900" }
+      };
+
+      questions.forEach((q, idx) => {
+        units[q.unitKey].total++;
+        const ans = userAnswers[idx];
+        if (ans === null) {
+          unanswered++;
+        } else if (ans === q.correctIdx) {
+          correct++;
+          units[q.unitKey].correct++;
+        } else {
+          wrong++;
+        }
+      });
+
+      const answered = correct + wrong;
+      const score100 = Math.round((correct / questions.length) * 100);
+
+      return {
+        total: questions.length,
+        correct,
+        wrong,
+        unanswered,
+        answered,
+        score100,
+        units
+      };
+    }
+
+    /**
+     * Update live score UI in header & sidebar
+     */
+    function updateScoreUI() {
+      const stats = calculateStats();
+      document.getElementById("header-correct").textContent = stats.correct;
+      document.getElementById("header-wrong").textContent = stats.wrong;
+      document.getElementById("header-unanswered").textContent = stats.unanswered;
+      document.getElementById("header-score-100").textContent = stats.score100;
+
+      const pct = Math.round((stats.answered / stats.total) * 100);
+      document.getElementById("progress-bar").style.width = `${pct}%`;
+      document.getElementById("progress-text").textContent = `${stats.answered} / ${stats.total} Terjawab (${pct}%)`;
+      document.getElementById("nav-progress-label").textContent = `${stats.answered}/${stats.total}`;
+    }
+
+    /**
+     * Show friendly status banner (no alert())
+     */
+    function showBanner(message, type = "info") {
+      const banner = document.getElementById("status-banner");
+      banner.className = "mb-6 rounded-2xl p-4 border text-sm font-medium transition-all";
+      if (type === "success") {
+        banner.classList.add("bg-emerald-50", "border-emerald-200", "text-emerald-900");
+      } else if (type === "warning") {
+        banner.classList.add("bg-amber-50", "border-amber-200", "text-amber-900");
+      } else {
+        banner.classList.add("bg-indigo-50", "border-indigo-200", "text-indigo-900");
+      }
+      banner.textContent = message;
+    }
+
+    /**
+     * Render reading passage cards (Sam, Anita, Kelly)
+     */
+    function populateReadingPassageGrid(containerEl) {
+      containerEl.innerHTML = "";
+      readingPassages.forEach((p) => {
+        const card = document.createElement("div");
+        card.className = `bg-white/95 rounded-2xl p-3.5 border ${p.cardBorder} shadow-xs`;
+        card.innerHTML = `
+          <div class="mb-2">
+            <span class="inline-block px-2.5 py-0.5 rounded-full ${p.badgeColor} text-white text-xs font-bold">${p.character}</span>
+          </div>
+          <p class="text-xs sm:text-[13px] text-slate-700 leading-relaxed">${p.text}</p>
+        `;
+        containerEl.appendChild(card);
+      });
+    }
+
+    /**
+     * Handle option click
+     */
+    function handleSelectOption(qIdx, optionIdx) {
+      if (userAnswers[qIdx] !== null) return;
+      userAnswers[qIdx] = optionIdx;
+      updateScoreUI();
+
+      if (viewMode === "single") {
+        renderSingleQuestion();
+      } else {
+        renderListQuestions();
+      }
+      renderNumberGrid();
+
+      const stats = calculateStats();
+      if (stats.unanswered === 0) {
+        showBanner(
+          `Hebat! Seluruh 45 soal telah selesai dijawab. Nilai akhir Anda: ${stats.score100} (${stats.correct} benar dari 45 soal).`,
+          "success"
+        );
+        openSummary();
+      }
+    }
+
+    /**
+     * Render Single Question Mode
+     */
+    function renderSingleQuestion() {
+      const q = questions[currentIndex];
+      const chosen = userAnswers[currentIndex];
+      const isAnswered = chosen !== null;
+      const letters = ["A", "B", "C", "D"];
+
+      // Show/Hide Reading Passage Card for questions 41-45
+      const passageCard = document.getElementById("single-passage-card");
+      if (q.unitKey === "reading") {
+        passageCard.classList.remove("hidden");
+        const passageContent = document.getElementById("single-passage-content");
+        if (showSinglePassage) {
+          passageContent.classList.remove("hidden");
+          populateReadingPassageGrid(passageContent);
+          document.getElementById("toggle-single-passage").textContent = "Sembunyikan Teks";
+        } else {
+          passageContent.classList.add("hidden");
+          document.getElementById("toggle-single-passage").textContent = "Tampilkan Teks";
+        }
+      } else {
+        passageCard.classList.add("hidden");
+      }
+
+      document.getElementById("single-badge").textContent = `Soal ${q.id} / ${questions.length}`;
+      const unitPill = document.getElementById("single-unit-pill");
+      unitPill.textContent = q.unit;
+      if (q.unitKey === "unit3") unitPill.className = "text-xs font-bold px-3 py-1 rounded-full bg-sky-100 text-sky-900";
+      else if (q.unitKey === "unit4") unitPill.className = "text-xs font-bold px-3 py-1 rounded-full bg-indigo-100 text-indigo-900";
+      else if (q.unitKey === "unit5") unitPill.className = "text-xs font-bold px-3 py-1 rounded-full bg-amber-100 text-amber-900";
+      else unitPill.className = "text-xs font-bold px-3 py-1 rounded-full bg-emerald-100 text-emerald-900";
+
+      document.getElementById("single-section-pill").textContent = q.section;
+
+      const wordBankBox = document.getElementById("single-wordbank-box");
+      if (q.wordBank) {
+        wordBankBox.classList.remove("hidden");
+        wordBankBox.textContent = q.wordBank;
+      } else {
+        wordBankBox.classList.add("hidden");
+      }
+
+      const statusPill = document.getElementById("single-status-pill");
+      if (!isAnswered) {
+        statusPill.className = "text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-600";
+        statusPill.textContent = "Belum Dijawab";
+      } else if (chosen === q.correctIdx) {
+        statusPill.className = "text-xs font-bold px-3 py-1 rounded-full bg-emerald-100 text-emerald-800";
+        statusPill.textContent = "Benar ✓";
+      } else {
+        statusPill.className = "text-xs font-bold px-3 py-1 rounded-full bg-rose-100 text-rose-800";
+        statusPill.textContent = "Salah ✕";
+      }
+
+      document.getElementById("single-question-text").textContent = `${q.id}. ${q.question}`;
+
+      const optionsContainer = document.getElementById("single-options-container");
+      optionsContainer.innerHTML = "";
+
+      q.shuffledOptions.forEach((optText, idx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.disabled = isAnswered;
+
+        let cardClass =
+          "w-full text-left p-4 rounded-2xl border-2 transition-all flex items-start sm:items-center gap-3.5 ";
+        let badgeClass =
+          "w-8 h-8 rounded-xl flex items-center justify-center font-bold text-sm shrink-0 transition-colors ";
+        let iconHtml = "";
+
+        if (!isAnswered) {
+          cardClass +=
+            "border-slate-200 bg-white hover:border-indigo-400 hover:bg-indigo-50/40 active:scale-[0.995] cursor-pointer";
+          badgeClass += "bg-slate-100 text-slate-700";
+        } else {
+          btn.classList.add("cursor-default");
+          if (idx === q.correctIdx) {
+            cardClass += "border-emerald-500 bg-emerald-50/90 text-emerald-950 font-semibold";
+            badgeClass += "bg-emerald-600 text-white";
+            iconHtml = `<span class="ml-auto text-emerald-600 font-bold text-xs sm:text-sm shrink-0">✓ Benar</span>`;
+          } else if (idx === chosen) {
+            cardClass += "border-rose-500 bg-rose-50/90 text-rose-950 font-semibold";
+            badgeClass += "bg-rose-600 text-white";
+            iconHtml = `<span class="ml-auto text-rose-600 font-bold text-xs sm:text-sm shrink-0">✕ Pilihan Anda</span>`;
+          } else {
+            cardClass += "border-slate-200 bg-slate-50/60 text-slate-400 opacity-75";
+            badgeClass += "bg-slate-200 text-slate-500";
+          }
+        }
+
+        btn.className = cardClass;
+        btn.innerHTML = `
+          <span class="${badgeClass}">${letters[idx]}</span>
+          <span class="text-sm sm:text-base leading-snug flex-1">${optText}</span>
+          ${iconHtml}
+        `;
+
+        if (!isAnswered) {
+          btn.addEventListener("click", () => handleSelectOption(currentIndex, idx));
+        }
+
+        optionsContainer.appendChild(btn);
+      });
+
+      const fbBox = document.getElementById("single-feedback-box");
+      if (isAnswered) {
+        const isCorrect = chosen === q.correctIdx;
+        fbBox.className = `mt-6 rounded-2xl p-4 sm:p-5 border transition-all ${
+          isCorrect
+            ? "bg-emerald-50 border-emerald-200 text-emerald-950"
+            : "bg-rose-50 border-rose-200 text-rose-950"
+        }`;
+        fbBox.innerHTML = `
+          <div class="flex items-center gap-2 font-bold text-sm sm:text-base ${
+            isCorrect ? "text-emerald-800" : "text-rose-800"
+          }">
+            <span>${isCorrect ? "✓ Jawaban Benar!" : "✕ Jawaban Kurang Tepat"}</span>
+          </div>
+          <p class="text-xs sm:text-sm mt-1.5 leading-relaxed">
+            <span class="font-semibold">Kunci Jawaban:</span> ${q.correctAnswer}
+          </p>
+          <p class="text-xs sm:text-sm mt-1 text-slate-700 leading-relaxed">
+            <span class="font-semibold">Penjelasan:</span> ${q.explanation}
+          </p>
+        `;
+      } else {
+        fbBox.className = "hidden";
+      }
+
+      document.getElementById("btn-prev").disabled = currentIndex === 0;
+      document.getElementById("btn-next").disabled = currentIndex === questions.length - 1;
+    }
+
+    /**
+     * Render All Questions List Mode (with Unit headers and Reading Passage before Q41)
+     */
+    function renderListQuestions() {
+      const container = document.getElementById("list-view-container");
+      container.innerHTML = "";
+      const letters = ["A", "B", "C", "D"];
+      let lastUnit = "";
+
+      questions.forEach((q, qIdx) => {
+        // Insert Unit Banner when unit changes
+        if (q.unit !== lastUnit) {
+          lastUnit = q.unit;
+          const unitHeader = document.createElement("div");
+          unitHeader.className = "pt-2";
+          unitHeader.innerHTML = `
+            <div class="bg-slate-900 text-white px-5 py-3 rounded-2xl font-extrabold text-sm sm:text-base tracking-wide flex items-center justify-between shadow-sm">
+              <span>${q.unit}</span>
+              <span class="text-xs font-semibold text-slate-300">${q.section}</span>
+            </div>
+          `;
+          container.appendChild(unitHeader);
+
+          // Insert Reading Passage card right before Question 41
+          if (q.id === 41) {
+            const passageBox = document.createElement("div");
+            passageBox.className = "bg-gradient-to-br from-emerald-50 via-teal-50/70 to-sky-50 rounded-3xl border-2 border-emerald-200 shadow-sm p-5 sm:p-6";
+            passageBox.innerHTML = `
+              <div class="flex items-center gap-2 pb-3 mb-3 border-b border-emerald-200/80">
+                <span class="px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-bold">Reading Passage (Questions 41–45)</span>
+                <span class="text-xs font-semibold text-emerald-900">Read the passage and answer the questions</span>
+              </div>
+              <div id="list-passage-grid" class="grid grid-cols-1 md:grid-cols-3 gap-3"></div>
+            `;
+            container.appendChild(passageBox);
+            populateReadingPassageGrid(passageBox.querySelector("#list-passage-grid"));
+          }
+        }
+
+        const chosen = userAnswers[qIdx];
+        const isAnswered = chosen !== null;
+
+        const card = document.createElement("article");
+        card.id = `list-card-${q.id}`;
+        card.className =
+          "bg-white rounded-3xl border border-slate-200/90 shadow-sm p-5 sm:p-6 scroll-mt-32";
+
+        const header = document.createElement("div");
+        header.className = "flex flex-wrap items-center justify-between gap-2 pb-3 mb-3 border-b border-slate-100";
+
+        const leftBadges = document.createElement("div");
+        leftBadges.className = "flex flex-wrap items-center gap-2";
+        leftBadges.innerHTML = `
+          <span class="px-3 py-1 rounded-full bg-indigo-600 text-white text-xs font-bold">Nomor ${q.id}</span>
+          <span class="px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold">${q.section}</span>
+        `;
+
+        const statusBadge = document.createElement("span");
+        if (!isAnswered) {
+          statusBadge.className = "text-xs font-semibold px-3 py-1 rounded-full bg-slate-100 text-slate-600";
+          statusBadge.textContent = "Belum Dijawab";
+        } else if (chosen === q.correctIdx) {
+          statusBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-emerald-100 text-emerald-800";
+          statusBadge.textContent = "Benar ✓";
+        } else {
+          statusBadge.className = "text-xs font-bold px-3 py-1 rounded-full bg-rose-100 text-rose-800";
+          statusBadge.textContent = "Salah ✕";
+        }
+
+        header.appendChild(leftBadges);
+        header.appendChild(statusBadge);
+        card.appendChild(header);
+
+        if (q.wordBank) {
+          const wb = document.createElement("div");
+          wb.className = "mb-3 px-3 py-2 rounded-xl bg-amber-50/80 border border-amber-200 text-xs text-amber-950 font-medium";
+          wb.textContent = q.wordBank;
+          card.appendChild(wb);
+        }
+
+        const qTitle = document.createElement("h3");
+        qTitle.className = "text-base sm:text-lg font-bold text-slate-900 leading-relaxed mb-4";
+        qTitle.textContent = `${q.id}. ${q.question}`;
+        card.appendChild(qTitle);
+
+        const optGrid = document.createElement("div");
+        optGrid.className = "grid grid-cols-1 md:grid-cols-2 gap-2.5";
+
+        q.shuffledOptions.forEach((optText, idx) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.disabled = isAnswered;
+
+          let btnCls =
+            "w-full text-left p-3.5 rounded-2xl border-2 transition-all flex items-center gap-3 ";
+          let badgeCls =
+            "w-7 h-7 rounded-lg flex items-center justify-center font-bold text-xs shrink-0 ";
+
+          if (!isAnswered) {
+            btnCls += "border-slate-200 bg-white hover:border-indigo-400 hover:bg-indigo-50/40 cursor-pointer";
+            badgeCls += "bg-slate-100 text-slate-700";
+          } else {
+            btnCls += "cursor-default ";
+            if (idx === q.correctIdx) {
+              btnCls += "border-emerald-500 bg-emerald-50 text-emerald-950 font-semibold";
+              badgeCls += "bg-emerald-600 text-white";
+            } else if (idx === chosen) {
+              btnCls += "border-rose-500 bg-rose-50 text-rose-950 font-semibold";
+              badgeCls += "bg-rose-600 text-white";
+            } else {
+              btnCls += "border-slate-200 bg-slate-50/60 text-slate-400 opacity-75";
+              badgeCls += "bg-slate-200 text-slate-500";
+            }
+          }
+
+          btn.className = btnCls;
+          btn.innerHTML = `
+            <span class="${badgeCls}">${letters[idx]}</span>
+            <span class="text-sm leading-snug flex-1">${optText}</span>
+          `;
+
+          if (!isAnswered) {
+            btn.addEventListener("click", () => handleSelectOption(qIdx, idx));
+          }
+          optGrid.appendChild(btn);
+        });
+
+        card.appendChild(optGrid);
+
+        if (isAnswered) {
+          const isCorrect = chosen === q.correctIdx;
+          const fb = document.createElement("div");
+          fb.className = `mt-4 rounded-2xl p-3.5 border text-xs sm:text-sm ${
+            isCorrect
+              ? "bg-emerald-50 border-emerald-200 text-emerald-950"
+              : "bg-rose-50 border-rose-200 text-rose-950"
+          }`;
+          fb.innerHTML = `
+            <div class="font-bold ${isCorrect ? "text-emerald-800" : "text-rose-800"}">
+              ${isCorrect ? "✓ Benar!" : `✕ Kurang Tepat — Kunci Jawaban: ${q.correctAnswer}`}
+            </div>
+            <p class="mt-1 text-slate-700">${q.explanation}</p>
+          `;
+          card.appendChild(fb);
+        }
+
+        container.appendChild(card);
+      });
+    }
+
+    /**
+     * Render 1–45 Navigation Grid
+     */
+    function renderNumberGrid() {
+      const grid = document.getElementById("number-grid");
+      grid.innerHTML = "";
+      let visibleCount = 0;
+
+      questions.forEach((q, idx) => {
+        const ans = userAnswers[idx];
+        const status = ans === null ? "unanswered" : ans === q.correctIdx ? "correct" : "wrong";
+
+        if (navFilter !== "all" && navFilter !== status) return;
+        visibleCount++;
+
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.textContent = q.id;
+
+        let cls = "h-10 rounded-xl text-xs font-bold transition flex items-center justify-center border ";
+        if (viewMode === "single" && idx === currentIndex) {
+          cls += "ring-2 ring-indigo-500 border-indigo-600 ";
+        }
+
+        if (status === "correct") {
+          cls += "bg-emerald-500 text-white border-emerald-600 hover:bg-emerald-600";
+        } else if (status === "wrong") {
+          cls += "bg-rose-500 text-white border-rose-600 hover:bg-rose-600";
+        } else {
+          cls += "bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200";
+        }
+
+        btn.className = cls;
+        btn.addEventListener("click", () => {
+          jumpToQuestion(q.id);
+        });
+
+        grid.appendChild(btn);
+      });
+
+      if (visibleCount === 0) {
+        const empty = document.createElement("div");
+        empty.className = "col-span-full text-center py-6 text-xs font-medium text-slate-500 bg-slate-50 rounded-xl border border-dashed border-slate-200";
+        empty.textContent = "Tidak ada nomor soal pada filter ini.";
+        grid.appendChild(empty);
+      }
+    }
+
+    /**
+     * Jump to a specific question ID (1–45)
+     */
+    function jumpToQuestion(questionId) {
+      const idx = questions.findIndex((item) => item.id === questionId);
+      if (idx === -1) return;
+      currentIndex = idx;
+
+      if (viewMode === "single") {
+        renderSingleQuestion();
+        renderNumberGrid();
+        document.getElementById("single-view-container").scrollIntoView({ behavior: "smooth", block: "nearest" });
+      } else {
+        const cardEl = document.getElementById(`list-card-${questionId}`);
+        if (cardEl) {
+          cardEl.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    }
+
+    /**
+     * Switch Display Mode ('single' or 'list')
+     */
+    function switchMode(mode) {
+      viewMode = mode;
+      const singleBtn = document.getElementById("mode-single-btn");
+      const listBtn = document.getElementById("mode-list-btn");
+      const singleContainer = document.getElementById("single-view-container");
+      const listContainer = document.getElementById("list-view-container");
+      const listBottomBar = document.getElementById("list-bottom-bar");
+
+      if (mode === "single") {
+        singleBtn.className = "flex-1 sm:flex-initial px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-white text-slate-900 shadow-sm transition";
+        listBtn.className = "flex-1 sm:flex-initial px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 transition";
+        singleContainer.classList.remove("hidden");
+        listContainer.classList.add("hidden");
+        listBottomBar.classList.add("hidden");
+        renderSingleQuestion();
+      } else {
+        listBtn.className = "flex-1 sm:flex-initial px-4 py-2 rounded-lg text-xs sm:text-sm font-bold bg-white text-slate-900 shadow-sm transition";
+        singleBtn.className = "flex-1 sm:flex-initial px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold text-slate-600 hover:text-slate-900 transition";
+        listContainer.classList.remove("hidden");
+        listBottomBar.classList.remove("hidden");
+        singleContainer.classList.add("hidden");
+        renderListQuestions();
+      }
+      renderNumberGrid();
+    }
+
+    /**
+     * Predicate evaluation based on score 0-100
+     */
+    function getPredicate(score100) {
+      if (score100 >= 90) {
+        return {
+          label: "A — Sangat Baik (Excellent)",
+          badgeClass: "bg-emerald-100 text-emerald-800",
+          desc: "Luar biasa! Pemahaman grammar Unit 3–5 dan bacaan sudah sangat matang."
+        };
+      }
+      if (score100 >= 80) {
+        return {
+          label: "B — Baik (Good)",
+          badgeClass: "bg-teal-100 text-teal-800",
+          desc: "Hasil bagus! Periksa kembali beberapa detail Present Perfect atau kosakata."
+        };
+      }
+      if (score100 >= 70) {
+        return {
+          label: "C — Cukup (Fair)",
+          badgeClass: "bg-amber-100 text-amber-800",
+          desc: "Sudah tuntas. Pelajari kembali penjelasan pada nomor yang kurang tepat."
+        };
+      }
+      return {
+        label: "D — Perlu Latihan Ulang",
+        badgeClass: "bg-rose-100 text-rose-800",
+        desc: "Tinjau kunci jawaban dan penjelasan di bawah, lalu coba ulangi kuisnya."
+      };
+    }
+
+    /**
+     * Open & render Final Summary Card
+     */
+    function openSummary() {
+      const summarySection = document.getElementById("summary-section");
+      summarySection.classList.remove("hidden");
+      renderSummaryContent();
+      summarySection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function renderSummaryContent() {
+      const stats = calculateStats();
+      const pred = getPredicate(stats.score100);
+      const studentName = document.getElementById("student-name").value.trim() || "Grade 4 Student";
+      const studentDate = document.getElementById("student-date").value || "-";
+
+      document.getElementById("summary-student-meta").textContent =
+        `Name: ${studentName}  •  Date: ${studentDate}  •  Wellington Intelligence School 2026/2027`;
+
+      document.getElementById("final-score-100").textContent = stats.score100;
+      document.getElementById("final-raw-score").textContent = `Skor: ${stats.correct} / ${stats.total} (${stats.score100}%)`;
+      document.getElementById("final-correct").textContent = stats.correct;
+      document.getElementById("final-wrong-total").textContent = stats.wrong + stats.unanswered;
+      document.getElementById("final-wrong-detail").textContent = `${stats.wrong} salah, ${stats.unanswered} belum dijawab`;
+
+      const predBadge = document.getElementById("final-predicate-badge");
+      predBadge.className = `inline-block mt-2 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-bold ${pred.badgeClass}`;
+      predBadge.textContent = pred.label;
+      document.getElementById("final-predicate-desc").textContent = pred.desc;
+
+      // Render Unit Breakdown Cards
+      const breakdownGrid = document.getElementById("unit-breakdown-grid");
+      breakdownGrid.innerHTML = "";
+      Object.values(stats.units).forEach((u) => {
+        const uPct = Math.round((u.correct / u.total) * 100);
+        const box = document.createElement("div");
+        box.className = "rounded-2xl border border-slate-200 bg-slate-50/70 p-4";
+        box.innerHTML = `
+          <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold ${u.badge}">${u.label}</span>
+          <div class="mt-2 flex items-baseline justify-between">
+            <span class="text-xl font-extrabold text-slate-900">${u.correct} / ${u.total}</span>
+            <span class="text-xs font-bold text-slate-600">${uPct}%</span>
+          </div>
+          <div class="mt-2 w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
+            <div class="bg-indigo-600 h-full rounded-full" style="width: ${uPct}%;"></div>
+          </div>
+        `;
+        breakdownGrid.appendChild(box);
+      });
+
+      // Render Answer Review List
+      const reviewList = document.getElementById("review-list");
+      reviewList.innerHTML = "";
+      let shownCount = 0;
+
+      questions.forEach((q, idx) => {
+        const ans = userAnswers[idx];
+        const isCorrect = ans === q.correctIdx;
+        if (reviewFilter === "wrong" && isCorrect) return;
+
+        shownCount++;
+        const userText = ans === null ? "Belum dijawab" : q.shuffledOptions[ans];
+
+        const card = document.createElement("div");
+        card.className = `p-4 rounded-2xl border ${
+          isCorrect ? "bg-emerald-50/50 border-emerald-200" : "bg-rose-50/50 border-rose-200"
+        }`;
+
+        const header = document.createElement("div");
+        header.className = "flex flex-wrap items-center justify-between gap-2 mb-2";
+
+        const title = document.createElement("div");
+        title.className = "font-bold text-sm text-slate-900";
+        title.textContent = `${q.id}. ${q.question}`;
+
+        const goBtn = document.createElement("button");
+        goBtn.type = "button";
+        goBtn.className = "text-xs font-semibold px-3 py-1 rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition shrink-0";
+        goBtn.textContent = "Lihat Soal";
+        goBtn.addEventListener("click", () => jumpToQuestion(q.id));
+
+        header.appendChild(title);
+        header.appendChild(goBtn);
+
+        const body = document.createElement("div");
+        body.className = "text-xs space-y-1";
+        body.innerHTML = `
+          <div><span class="font-semibold text-slate-700">Jawaban Anda:</span> <span class="${isCorrect ? "text-emerald-700 font-bold" : "text-rose-700 font-bold"}">${userText}</span></div>
+          <div><span class="font-semibold text-slate-700">Kunci Jawaban:</span> <span class="text-emerald-800 font-bold">${q.correctAnswer}</span></div>
+          <div class="text-slate-600 pt-0.5">${q.explanation}</div>
+        `;
+
+        card.appendChild(header);
+        card.appendChild(body);
+        reviewList.appendChild(card);
+      });
+
+      if (shownCount === 0) {
+        const empty = document.createElement("div");
+        empty.className = "text-center py-6 text-sm font-semibold text-emerald-800 bg-emerald-50 rounded-2xl border border-emerald-200";
+        empty.textContent = "Sempurna! Tidak ada jawaban salah pada seluruh 45 soal.";
+        reviewList.appendChild(empty);
+      }
+    }
+
+    /**
+     * Reset quiz and reshuffle options
+     */
+    function resetQuiz() {
+      initQuizData();
+      navFilter = "all";
+
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.className =
+          btn.dataset.filter === "all"
+            ? "filter-btn py-2 px-2.5 rounded-lg bg-white text-slate-900 shadow-sm transition"
+            : "filter-btn py-2 px-2.5 rounded-lg text-slate-600 hover:text-slate-900 transition";
+      });
+
+      document.getElementById("summary-section").classList.add("hidden");
+      updateScoreUI();
+      if (viewMode === "single") {
+        renderSingleQuestion();
+      } else {
+        renderListQuestions();
+      }
+      renderNumberGrid();
+      showBanner("Kuis telah diulang dan urutan pilihan jawaban telah diacak kembali. Selamat mengerjakan!", "info");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // Event Listeners
+    document.getElementById("mode-single-btn").addEventListener("click", () => switchMode("single"));
+    document.getElementById("mode-list-btn").addEventListener("click", () => switchMode("list"));
+
+    document.getElementById("toggle-single-passage").addEventListener("click", () => {
+      showSinglePassage = !showSinglePassage;
+      renderSingleQuestion();
+    });
+
+    document.getElementById("btn-prev").addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderSingleQuestion();
+        renderNumberGrid();
+      }
+    });
+
+    document.getElementById("btn-next").addEventListener("click", () => {
+      if (currentIndex < questions.length - 1) {
+        currentIndex++;
+        renderSingleQuestion();
+        renderNumberGrid();
+      }
+    });
+
+    document.querySelectorAll(".unit-jump-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const targetId = parseInt(btn.dataset.jump, 10);
+        jumpToQuestion(targetId);
+      });
+    });
+
+    document.getElementById("btn-finish-top").addEventListener("click", openSummary);
+    document.getElementById("btn-finish-side").addEventListener("click", openSummary);
+    document.getElementById("btn-finish-bottom").addEventListener("click", openSummary);
+
+    document.getElementById("btn-reset-top").addEventListener("click", resetQuiz);
+    document.getElementById("btn-reset-summary").addEventListener("click", resetQuiz);
+    document.getElementById("btn-close-summary").addEventListener("click", () => {
+      document.getElementById("summary-section").classList.add("hidden");
+    });
+
+    document.querySelectorAll(".filter-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        navFilter = btn.dataset.filter;
+        document.querySelectorAll(".filter-btn").forEach((b) => {
+          b.className = "filter-btn py-2 px-2.5 rounded-lg text-slate-600 hover:text-slate-900 transition";
+        });
+        btn.className = "filter-btn py-2 px-2.5 rounded-lg bg-white text-slate-900 shadow-sm transition";
+        renderNumberGrid();
+      });
+    });
+
+    document.getElementById("review-only-wrong-btn").addEventListener("click", () => {
+      reviewFilter = "wrong";
+      document.getElementById("review-only-wrong-btn").className = "px-3.5 py-2 rounded-xl bg-rose-600 text-white shadow-sm transition";
+      document.getElementById("review-all-btn").className = "px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition";
+      renderSummaryContent();
+    });
+
+    document.getElementById("review-all-btn").addEventListener("click", () => {
+      reviewFilter = "all";
+      document.getElementById("review-all-btn").className = "px-3.5 py-2 rounded-xl bg-indigo-600 text-white shadow-sm transition";
+      document.getElementById("review-only-wrong-btn").className = "px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition";
+      renderSummaryContent();
+    });
+
+    // Set default date to today
+    const now = new Date();
+    const yyyy = now.getFullYear();
+    const mm = String(now.getMonth() + 1).padStart(2, "0");
+    const dd = String(now.getDate()).padStart(2, "0");
+    document.getElementById("student-date").value = `${yyyy}-${mm}-${dd}`;
+
+    // Start App
+    initQuizData();
+    updateScoreUI();
+    renderSingleQuestion();
+    renderNumberGrid();
+  </script>
+</body>
+</html>
